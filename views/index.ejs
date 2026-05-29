@@ -2,15 +2,50 @@
 <html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع صفي</title>
-    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* تصميم عصري وجذاب */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            color: white;
+        }
+        h1 { margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .container { width: 90%; max-width: 400px; text-align: center; }
+        .btn {
+            display: block;
+            background: white;
+            color: #764ba2;
+            padding: 18px;
+            margin: 15px 0;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
-    <h1>مرحباً بك في موقع صفي</h1>
-    <p>اختر الصف الدراسي:</p>
-    
-    <a href="#" class="btn">الصف العاشر</a>
-    <a href="#" class="btn">الصف الحادي عشر</a>
-    <a href="#" class="btn">الصف الثاني عشر</a>
+    <div class="container">
+        <h1>موقع صفي</h1>
+        <p>اختر الصف الدراسي للمتابعة</p>
+        
+        <a href="#" class="btn">الصف العاشر</a>
+        <a href="#" class="btn">الصف الحادي عشر</a>
+        <a href="#" class="btn">الصف الثاني عشر</a>
+    </div>
 </body>
 </html>
