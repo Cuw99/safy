@@ -3,49 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة صفي التعليمية</title>
+    <title>منصة صفي</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
         
         body {
             font-family: 'Cairo', sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background-color: #f8f9fa;
             margin: 0;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: #fff;
+            justify-content: center;
+            min-height: 100vh;
         }
-        header { padding: 40px 20px; font-size: 1.8rem; font-weight: bold; text-align: center; }
-        .container { width: 90%; max-width: 450px; }
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 30px;
-            margin-bottom: 20px;
-            border-radius: 25px;
+        .header { margin-bottom: 40px; text-align: center; }
+        .header h1 { color: #0056b3; font-size: 2.5rem; margin: 0; }
+        .header p { color: #666; font-size: 1.1rem; }
+        
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             text-align: center;
-            transition: 0.3s;
-            cursor: pointer;
-            text-decoration: none;
-            color: white;
-            display: block;
+            width: 85%;
+            max-width: 400px;
         }
-        .card:hover { background: rgba(255, 255, 255, 0.2); transform: translateY(-5px); }
-        .icon { font-size: 3rem; margin-bottom: 10px; display: block; }
+        .box h2 { color: #0056b3; margin-bottom: 20px; }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn:hover { background-color: #0056b3; }
+        .icon { font-size: 3rem; margin-top: 20px; display: block; }
     </style>
 </head>
 <body>
-    <header>موقع صفي التعليمي</header>
-    
-    <div class="container">
-        <a href="/tenth-grade" class="card">
-            <span class="icon">🎓</span>
-            <h2>الصف العاشر العام</h2>
-            <p>اضغط للوصول إلى المواد الدراسية</p>
-        </a>
+
+    <div class="header">
+        <h1>مرحباً بك في صفي</h1>
+        <p>منصتك التعليمية السهلة</p>
     </div>
+
+    <div class="box">
+        <h2>عاشر عام</h2>
+        <p>ابدأ رحلتك التعليمية معنا</p>
+        <br>
+        <a href="#" class="btn">ابدأ الآن</a>
+        <span class="icon">📚</span>
+    </div>
+
 </body>
 </html>
