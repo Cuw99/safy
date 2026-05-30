@@ -6,58 +6,64 @@
     <title>منصة صفي</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-        
+
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: #f8f9fa;
+            background: radial-gradient(circle at center, #1e3c72, #2a5298);
             margin: 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-        }
-        .header { margin-bottom: 40px; text-align: center; }
-        .header h1 { color: #0056b3; font-size: 2.5rem; margin: 0; }
-        .header p { color: #666; font-size: 1.1rem; }
-        
-        .box {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-            width: 85%;
-            max-width: 400px;
-        }
-        .box h2 { color: #0056b3; margin-bottom: 20px; }
-        .btn {
-            background-color: #007bff;
             color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            display: inline-block;
-            transition: 0.3s;
         }
-        .btn:hover { background-color: #0056b3; }
-        .icon { font-size: 3rem; margin-top: 20px; display: block; }
+
+        .glass-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 50px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            width: 80%;
+            max-width: 350px;
+        }
+
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        p { opacity: 0.8; margin-bottom: 30px; }
+
+        .grade-card {
+            background: white;
+            color: #1e3c72;
+            padding: 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-decoration: none;
+            display: block;
+            transition: 0.4s;
+        }
+
+        .grade-card:hover {
+            transform: scale(1.05);
+            background: #f0f0f0;
+        }
+
+        .icon { font-size: 4rem; display: block; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>مرحباً بك في صفي</h1>
-        <p>منصتك التعليمية السهلة</p>
-    </div>
-
-    <div class="box">
-        <h2>عاشر عام</h2>
-        <p>ابدأ رحلتك التعليمية معنا</p>
-        <br>
-        <a href="#" class="btn">ابدأ الآن</a>
-        <span class="icon">📚</span>
+    <div class="glass-box">
+        <span class="icon">📘</span>
+        <h1>مرحباً بك</h1>
+        <p>منصة صفي التعليمية</p>
+        
+        <a href="/subjects" class="grade-card">
+            عاشر عام
+        </a>
     </div>
 
 </body>
